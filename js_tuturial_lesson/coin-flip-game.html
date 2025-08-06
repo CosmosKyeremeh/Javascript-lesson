@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>coin flip</title>
+</head>
+<body>
+
+  <button 
+    function action (){
+      onclick="
+      const randomNum = Math.random();
+
+        result = '';
+
+        if(randomNum < 0.5){
+          cresult = 'head';
+        }
+        else{
+          result = 'tail';
+        }
+
+        if(randomNum === 'head'){
+          alert(`You picked: Head. Computer Picked ${result}. Lost!`)
+        }
+
+          else{
+            alert(`you picked Tail computer picked ${result}, Won!`)
+          }
+        
+    "}>Head</button>
+
+  <button onclick="
+  randomNum = Math.random();
+
+    result = '';
+
+    if(randomNum < 0.5){
+      cresult = 'head';
+    }
+    else{
+      result = 'tail';
+    }
+
+    if(randomNum === 'head'){
+      alert(`You picked: Head. Computer Picked ${result}. Lost!`)
+    }
+
+      else{
+        alert(`you picked Tail computer picked ${result}, Won!`)
+      }">tail</button>
+
+  <script>
+  </script>
+</body>
+</html>
