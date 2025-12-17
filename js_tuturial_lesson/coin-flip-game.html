@@ -3,55 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>coin flip</title>
+  <title>Coin-flip Game</title>
 </head>
 <body>
+  <h1 align = center> Coin Flip</h1>
 
-  <button 
-    function action (){
-      onclick="
-      const randomNum = Math.random();
+  <button onclick=" 
+    let guess = 'heads';
+    randomNumber = Math.random();
 
-        result = '';
+    let result = '';
 
-        if(randomNum < 0.5){
-          cresult = 'head';
-        }
-        else{
-          result = 'tail';
-        }
+    if (randomNumber < 0.5) {
+      result = 'heads'
+    } else if (randomNumber >= 0.5) {
+      result = 'tails'
+    } 
+    // console.log(result)
 
-        if(randomNum === 'head'){
-          alert(`You picked: Head. Computer Picked ${result}. Lost!`)
-        }
+    if (result === 'heads' /*&& result === 'heads'*/) {
+      console.log('You win')
+    } else if (result === 'tails' /*&& result === 'heads'*/ ) {
+      console.log('You lose!')
+    }
+    ">
+     head 
+    </button>
 
-          else{
-            alert(`you picked Tail computer picked ${result}, Won!`)
-          }
-        
-    "}>Head</button>
-
-  <button onclick="
-  randomNum = Math.random();
-
+  <button onclick=" 
+    guess = 'tails';
+    randomNumber = Math.random();
     result = '';
+    
+    if (randomNumber < 0.5) {
+      result = 'heads'
+    } else if (randomNumber >= 0.5) {
+      result = 'tails'
+    } 
 
-    if(randomNum < 0.5){
-      cresult = 'head';
-    }
-    else{
-      result = 'tail';
-    }
-
-    if(randomNum === 'head'){
-      alert(`You picked: Head. Computer Picked ${result}. Lost!`)
+    
+    if (result === 'heads' ) {
+      console.log('You win')
+    } else if (result === 'tails' ) {
+      console.log('You lose!')
     }
 
-      else{
-        alert(`you picked Tail computer picked ${result}, Won!`)
-      }">tail</button>
+      //  console.log(result = 'tails'? 'You win!' : 'You lose');
+    "> 
+    tail 
+  </button>
 
   <script>
+
   </script>
 </body>
 </html>
